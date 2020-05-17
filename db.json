@@ -23,6 +23,24 @@
       "name": "Gidorah",
       "power": "Lightning breath",
       "image": "https://i.ebayimg.com/images/g/kskAAOSwp2VdldA4/s-l640.jpg"
+    },
+    {
+      "name": "Snowball",
+      "power": "Fast",
+      "image": "https://www.websweepuk.com/Iconic/SC1375-2.jpg",
+      "id": 5
+    },
+    {
+      "name": "Chole",
+      "power": "Fat",
+      "image": "https://vignette.wikia.nocookie.net/heroes-and-villians/images/1/16/Chloe_pets.png/revision/latest?cb=20171002002241",
+      "id": 6
+    },
+    {
+      "name": "Max",
+      "power": "Bark",
+      "image": "https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/original/products/88923/92961/The-Secret-Life-of-Pets-2-Max-terrier-dog-cardboard-cutout-buy-now-at-starstills__18674.1559323388.jpg?c=2&imbypass=on",
+      "id": 7
     }
   ],
   "sightings": [

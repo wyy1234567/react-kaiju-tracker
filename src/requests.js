@@ -1,5 +1,5 @@
 // headers --> use these at your own discretion
-// const headers = {'Content-Type': 'application/json', 'Accepts': 'application/json'}
+const headers = {'Content-Type': 'application/json', 'Accepts': 'application/json'}
 // urls
 const kaijusURL = 'http://localhost:4000/kaijus/'
 const sightingsURL = 'http://localhost:4000/sightings'
@@ -17,6 +17,23 @@ export const fetchKaijus = () => fetch(kaijusURL)
 .catch(catchError)
 
 // TODO: define a few more kaiju fetches
+export const postKaiju = kaijuObj => fetch(kaijusURL, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify(kaijuObj)})
+    .then(parseData)
+    .catch(catchError)
+
+export const patchKaiju = kaijuObj => fetch(`${kaijusURL}/${kaijuObj.id}`, {
+    method: 'PATCH',
+    headers,
+    body: JSON.stringify(kaijuObj)})
+    .then(parseData)
+    .catch(catchError)
+
+export const deleteKaiju = id => fetch(`${kaijusURL}/${id}`, {method: 'DELETE' })
+.then(parseData)
+.catch(catchError)
 
 //////////////////////////////////////////////////////
 
